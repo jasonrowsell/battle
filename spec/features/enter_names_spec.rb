@@ -1,10 +1,18 @@
+# frozen_string_literal: true
+
 feature 'Enter names' do
   scenario 'submitting names' do
     visit('/')
-    fill_in :player_1_name, with: 'Player 1'
-    fill_in :player_2_name, with: 'Player 2'
-    click_button 'Submit'
+    sign_in_and_play
     save_and_open_page
-    expect(page).to have_content 'Player 1 vs. Player 2'
+    expect(page).to have_content 'Player 1 VS. Player 2'
+  end
+end
+
+feature 'View hit points' do
+  scenario 'see opponents hit points' do
+    visit('/')
+    sign_in_and_play
+    expect(page).to have_content 'Player 2: 60HP'
   end
 end

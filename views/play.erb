@@ -1,1 +1,28 @@
-<%= @player_1_name %> vs. <%= @player_2_name %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Battle!</title>
+    <link rel="stylesheet" href="play.css" />
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <style>
+      body {
+      font-family: 'Abel';font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="versus">
+        <p><%= @player_1_name %> VS. <%= @player_2_name %></p>
+      </div>
+
+      <div class="hp">
+        <p><%= @player_2_name %>: 60HP</p>
+      </div>
+    </div>
+  </body>
+</html>

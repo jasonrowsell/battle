@@ -1,0 +1,34 @@
+.container {
+  width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px;
+}
+
+.container h1 {
+  font-size: 70px;
+  font-weight: 800;
+}
+
+.container h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.usernames input[type="text"] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 70px 0;
+  box-sizing: border-box;
+}
+
+.usernames label {
+  margin: 10px;
+}
+
+.submitbutton {
+  margin: 0px;
+  border: none;
+  padding: 10px 100px;
+  font-weight: 650;
+}

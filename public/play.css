@@ -1,0 +1,16 @@
+.container {
+  width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 150px;
+}
+
+.versus p {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.hp p {
+  font-weight: normal;
+  font-size: 25px;
+}
