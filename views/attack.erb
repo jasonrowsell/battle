@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Battle!</title>
-    <link rel="stylesheet" href="play.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Abel"
       rel="stylesheet"
@@ -20,17 +19,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="versus">
-        <p><%= @player_1_name %> VS. <%= @player_2_name %></p>
-      </div>
-
-      <div class="hp">
-        <p><%= @player_2_name %>: 60HP</p>
-      </div>
-      <div class="options">
-        <form action="/attack">
-          <input type="submit" value="Attack" />
-        </form>
+      <div class="attack">
+        <%= @player_1_name %> attacked <%= @player_2_name %>!
       </div>
     </div>
   </body>
