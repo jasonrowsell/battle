@@ -19,9 +19,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="attack">
-        <%= @player_1_name %> attacked <%= @player_2_name %>!
-      </div>
+      <h1>
+        <%= @game.target_player.name %> attacked <%= @game.current_player.name %>!
+      </h1>
+        <%= @game.current_player.name %>: <%= @game.current_player.hp %>HP
+      <a id="back" href="/play"></a>
     </div>
   </body>
 </html>
